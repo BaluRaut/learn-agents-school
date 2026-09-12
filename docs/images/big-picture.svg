@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1160" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <style>
+    .band1 { fill: #fff; stroke: #0d9488; stroke-width: 3; }
+    .band2 { fill: #fff; stroke: #be123c; stroke-width: 3; }
+    .bx  { fill: #f8fafc; stroke: #94a3b8; stroke-width: 2; }
+    .bxt { fill: #fff; stroke: #0d9488; stroke-width: 2.5; }
+    .bxr { fill: #fff; stroke: #be123c; stroke-width: 2.5; }
+    .warn { fill: #fef2f2; stroke: #dc2626; stroke-width: 1.5; stroke-dasharray: 7 6; }
+    .tip  { fill: #f0fdfa; stroke: #0d9488; stroke-width: 1.5; }
+    .win  { fill: #fff1f2; stroke: #be123c; stroke-width: 1.5; }
+    .title { font-size: 36px; font-weight: 800; fill: #0f172a; }
+    .bandt { font-size: 26px; font-weight: 800; }
+    .t  { font-size: 19px; font-weight: 600; fill: #0f172a; }
+    .s  { font-size: 15px; fill: #475569; }
+    .m  { text-anchor: middle; }
+    .arr  { stroke: #64748b; stroke-width: 2.5; fill: none; marker-end: url(#arw); }
+    .ntb { font-size: 15px; font-weight: 700; fill: #fff; text-anchor: middle; }
+  </style>
+
+  <rect x="0" y="0" width="1920" height="1160" fill="#ffffff"/>
+  <text class="title m" x="960" y="52">The Big Picture — agents: answers → OUTCOMES · the loop is in the repo</text>
+
+  <rect class="band1" x="40" y="80" width="1840" height="470" rx="20"/>
+  <text class="bandt" x="70" y="122" fill="#0d9488">🔁 PART 1 — THE MACHINE (lessons 1–5)</text>
+
+  <rect class="bxt" x="70" y="170" width="330" height="130" rx="14"/>
+  <text class="t m" x="235" y="203">📋 answers vs outcomes</text>
+  <text class="s m" x="235" y="231">a chatbot recites from memory;</text>
+  <text class="s m" x="235" y="255">an agent gets a GOAL, a to-do</text>
+  <text class="s m" x="235" y="279">mindset and a hall pass 🎫</text>
+  <g transform="translate(70,170)"><circle r="13" fill="#0d9488"/><text class="ntb" dy="5">1</text></g>
+
+  <rect class="bxt" x="460" y="170" width="430" height="130" rx="14"/>
+  <text class="t m" x="675" y="203">🔁 the loop: think → act → observe</text>
+  <text class="s m" x="675" y="231">THINK = next-token reasoning, as text · ACT = the</text>
+  <text class="s m" x="675" y="255">harness runs a tool · OBSERVE = result onto the pad —</text>
+  <text class="s m" x="675" y="279">repeat, smarter each beat, until done {answer}</text>
+  <g transform="translate(460,170)"><circle r="13" fill="#0d9488"/><text class="ntb" dy="5">2</text></g>
+
+  <rect class="bxt" x="950" y="170" width="430" height="130" rx="14"/>
+  <text class="t m" x="1165" y="203">🧰 the belt · 📔 the pad</text>
+  <text class="s m" x="1165" y="231">tools = name + label + schema + writes-flag; labels are</text>
+  <text class="s m" x="1165" y="255">half the intelligence · scratchpad = working memory on</text>
+  <text class="s m" x="1165" y="279">the small desk — compact it, externalize the durable</text>
+  <g transform="translate(950,170)"><circle r="13" fill="#0d9488"/><text class="ntb" dy="5">3</text></g>
+
+  <rect class="bxt" x="1440" y="170" width="410" height="130" rx="14"/>
+  <text class="t m" x="1645" y="203">🚧 field-trip rules</text>
+  <text class="s m" x="1645" y="231">MAX_STEPS curfew 🕐 · write gates —</text>
+  <text class="s m" x="1645" y="255">reads flow, writes wait [y/N] · hardened</text>
+  <text class="s m" x="1645" y="279">tools (no eval!) · every beat logged 🧾</text>
+  <g transform="translate(1440,170)"><circle r="13" fill="#0d9488"/><text class="ntb" dy="5">4</text></g>
+
+  <line class="arr" x1="400" y1="235" x2="456" y2="235"/>
+  <line class="arr" x1="890" y1="235" x2="946" y2="235"/>
+  <line class="arr" x1="1380" y1="235" x2="1436" y2="235"/>
+
+  <rect class="tip" x="70" y="400" width="1780" height="110" rx="14"/>
+  <text class="t m" x="960" y="438">🔬 the repo: agent/agent.py — ~130 lines, zero dependencies, no API key</text>
+  <text class="s m" x="960" y="466">TOOLS (belt + writes-flags + hardened calc) · BRAINS (ScriptedBrain demo · HumanBrain --drive · ← one LLM call slots here) ·</text>
+  <text class="s m" x="960" y="490">run() (curfew + gate + errors-as-observations + scratchpad) — every framework is this file with more adjectives</text>
+  <g transform="translate(70,400)"><circle r="13" fill="#0d9488"/><text class="ntb" dy="5">5</text></g>
+
+  <text class="t m" x="960" y="588" fill="#475569">python3 agent/agent.py --drive — YOU are the brain: feel every beat from the inside 🧠</text>
+
+  <rect class="band2" x="40" y="610" width="1840" height="510" rx="20"/>
+  <text class="bandt" x="70" y="652" fill="#be123c">💥 PART 2 — REALITY (lessons 6–8)</text>
+
+  <rect class="warn" x="70" y="700" width="560" height="200" rx="14"/>
+  <text class="t m" x="350" y="733">💥 the five failure modes</text>
+  <text class="s m" x="350" y="763">1 compounding: wrong fact at step 2 → polished wrong</text>
+  <text class="s m" x="350" y="787">answer at step 9 · 2 loops: same act forever · 3 injection:</text>
+  <text class="s m" x="350" y="811">instructions hiding in tool results · 4 goal drift: helpful</text>
+  <text class="s m" x="350" y="835">side quests · 5 fake done: declared success, no outcome</text>
+  <text class="s m" x="350" y="871">📊 caught by EVALS: scored scenarios, outcome checks</text>
+  <g transform="translate(70,700)"><circle r="13" fill="#be123c"/><text class="ntb" dy="5">1</text></g>
+
+  <rect class="bxr" x="690" y="700" width="560" height="200" rx="14"/>
+  <text class="t m" x="970" y="733">👯 the five patterns (+ pattern zero)</text>
+  <text class="s m" x="970" y="763">🧍 solo doer (start here!) · 🗺️ planner + executor ·</text>
+  <text class="s m" x="970" y="787">🧑‍🏫 critic loop (best critics: test runners) ·</text>
+  <text class="s m" x="970" y="811">🚧 human-in-the-loop (drafts flow, signatures gate) ·</text>
+  <text class="s m" x="970" y="835">👯 the team (with a foreman &amp; checkable artifacts)</text>
+  <text class="s m" x="970" y="871">🙅 zero: fixed steps? write a SCRIPT — no agent at all</text>
+  <g transform="translate(690,700)"><circle r="13" fill="#be123c"/><text class="ntb" dy="5">2</text></g>
+
+  <rect class="bxr" x="1310" y="700" width="540" height="200" rx="14"/>
+  <text class="t m" x="1580" y="733">🎼 drawn twice on the patterns page</text>
+  <text class="s m" x="1580" y="763">every pattern: numbered flow diagram +</text>
+  <text class="s m" x="1580" y="787">full sequence diagram — because every</text>
+  <text class="s m" x="1580" y="811">pattern is the SAME loop, wrapped differently ·</text>
+  <text class="s m" x="1580" y="835">handoffs are artifacts (files, PRs, JSON),</text>
+  <text class="s m" x="1580" y="859">never vibes</text>
+  <g transform="translate(1310,700)"><circle r="13" fill="#be123c"/><text class="ntb" dy="5">3</text></g>
+
+  <rect class="win" x="70" y="960" width="1780" height="120" rx="14"/>
+  <text class="t m" x="960" y="1000">🎓 the graduation skill: build one, break one, secure one, eval one — and know when to say "this doesn't need an agent" 🙅</text>
+  <text class="s m" x="960" y="1030">siblings: the AI school (L11 = the aerial view) · the MCP school (where tool belts come from 🔌) ·</text>
+  <text class="s m" x="960" y="1054">and the ops schools (Docker/K8s/AWS/ArgoCD) — because agents that touch production wear ALL the hats 🎩</text>
+</svg>
