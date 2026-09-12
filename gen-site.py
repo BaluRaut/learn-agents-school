@@ -234,7 +234,9 @@ python3 agent/agent.py --drive    # YOU are the brain: pick every action</code><
     <a href="https://github.com/BaluRaut/learn-agents-school">github.com/BaluRaut/learn-agents-school</a> ·
     siblings: <a href="https://baluraut.github.io/learn-ai-school/">AI</a> ·
     <a href="https://baluraut.github.io/learn-mcp-school/">MCP</a>
-  </footer>
+   ·
+  <a href="https://baluraut.github.io/school/">🏫 all schools</a>
+</footer>
 </div>
 </body>
 </html>
@@ -257,6 +259,8 @@ DIAGRAMS = head("Lesson diagrams — Learn Agents School",
 <footer>
   Learn Agents School · <a href="index.html">Course home</a> · <a href="patterns.html">Patterns</a> ·
   <a href="https://github.com/BaluRaut/learn-agents-school">GitHub</a>
+ ·
+  <a href="https://baluraut.github.io/school/">🏫 all schools</a>
 </footer>
 </div>
 </body>
@@ -372,6 +376,8 @@ PATTERNS = head("5 agent patterns — Learn Agents School",
   Learn Agents School · <a href="index.html">Course home</a> ·
   <a href="lesson-diagrams.html">Lesson diagrams</a> ·
   <a href="https://github.com/BaluRaut/learn-agents-school">GitHub</a>
+ ·
+  <a href="https://baluraut.github.io/school/">🏫 all schools</a>
 </footer>
 </div>
 </body>
