@@ -210,7 +210,7 @@ python3 agent/agent.py --drive    # YOU are the brain: pick every action</code><
   <h2 id="lessons">🎓 The 8 lessons</h2>
   <p class="sub">One git branch = one idea; branch 05 contains lessons 01–05. Deep-dive companion to
   the <a href="https://baluraut.github.io/learn-ai-school/">AI course</a>'s lesson 11 — and the
-  <a href="https://baluraut.github.io/learn-mcp-school/">MCP school</a> supplies the tool belt.</p>
+  <a href="https://baluraut.github.io/learn-mcp-school/">MCP school</a> supplies the tool belt. Curious how we got here and where it goes? Read <a href="history-and-future.html"><b>before · why · agentic · future</b></a>.</p>
   <div class="grid">
 {chr(10).join(card(n) for n in range(1,9))}
   </div>
@@ -225,6 +225,7 @@ python3 agent/agent.py --drive    # YOU are the brain: pick every action</code><
 {ALL_DSECS}
   <a class="btn" href="{GH}/lesson-01-what-is-an-agent/lessons/01-what-is-an-agent/README.md">Start Lesson 01 →</a>
   <a class="btn alt" href="patterns.html">👯 The 5 patterns</a>
+  <a class="btn alt" href="history-and-future.html">⏮️ Before · why · agentic · future</a>
   <a class="btn alt" href="lesson-diagrams.html">📐 All 8 lesson diagrams</a>
   <a class="btn alt" href="https://baluraut.github.io/learn-mcp-school/">🔌 The MCP school</a>
 

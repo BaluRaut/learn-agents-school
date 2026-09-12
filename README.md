@@ -6,7 +6,8 @@ zero dependencies, no API key.
 
 🌐 **Interactive site:** **<https://baluraut.github.io/learn-agents-school/>** —
 lesson cards, numbered diagrams, the big-picture 4K, and
-**[5 agent patterns with flow + sequence diagrams](https://baluraut.github.io/learn-agents-school/patterns.html)**.
+**[5 agent patterns with flow + sequence diagrams](https://baluraut.github.io/learn-agents-school/patterns.html)** — plus
+**[before · why · "agentic" · the future](https://baluraut.github.io/learn-agents-school/history-and-future.html)**: the five eras, the six forces that birthed agents, the agency dial, and an honest outlook.
 
 Siblings: [AI school](https://github.com/BaluRaut/learn-ai-school) (lesson 11 is the aerial
 view of agents) · [MCP school](https://github.com/BaluRaut/learn-mcp-school) (where tool

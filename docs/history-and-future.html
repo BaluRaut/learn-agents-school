@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Before · why · agentic · future — Learn Agents School</title>
+<meta name="description" content="The history of AI agents (what came before, why agents were born), what the word agentic actually means, and a grounded outlook on where agents are going.">
+<style>
+  :root { --bg:#f8fafc; --card:#fff; --ink:#0f172a; --muted:#475569; --line:#e2e8f0; --accent:#0d9488; --ok:#16a34a; --blue:#2563eb; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0b1220; --card:#131c2e; --ink:#e2e8f0; --muted:#94a3b8; --line:#253349; } }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--ink); font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif; line-height:1.6; }
+  .wrap { max-width:1280px; margin:0 auto; padding:28px 20px 60px; }
+  @media (min-width: 1660px) { .wrap { max-width: 1580px; } }
+  a { color:var(--blue); } h1 { font-size:2rem; line-height:1.25; } h2 { font-size:1.4rem; margin:44px 0 6px; }
+  .sub { color:var(--muted); max-width:74ch; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin:16px 0 8px; }
+  .chip { border:1px solid var(--line); background:var(--card); border-radius:999px; padding:6px 14px; font-size:.85rem; color:var(--muted); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:14px; margin-top:16px; }
+  .lesson { background:var(--card); border:1px solid var(--line); border-top:5px solid var(--c,var(--accent)); border-radius:14px; padding:16px; display:flex; flex-direction:column; gap:6px; }
+  .lesson .top { display:flex; align-items:center; gap:10px; }
+  .lesson .num { flex:none; width:30px; height:30px; border-radius:50%; background:var(--c,var(--accent)); color:#fff; display:inline-flex; align-items:center; justify-content:center; font-weight:800; font-size:.9rem; }
+  .lesson h3 { font-size:1.02rem; line-height:1.3; } .lesson .ana { color:var(--muted); font-size:.9rem; }
+  .lesson code { font-size:.78rem; background:var(--bg); border:1px solid var(--line); border-radius:6px; padding:1px 6px; }
+  .lesson a.go { margin-top:auto; font-weight:600; font-size:.9rem; text-decoration:none; } .lesson a.go+a.go { margin-top:0; } .lesson a.go:hover { text-decoration:underline; }
+  .callout { background:var(--card); border:1px solid var(--line); border-left:6px solid var(--ok); border-radius:14px; padding:18px 20px; margin-top:16px; }
+  pre { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; overflow-x:auto; font-size:.88rem; margin-top:12px; }
+  .btn { display:inline-block; background:var(--accent); color:#fff; border-radius:10px; padding:10px 18px; text-decoration:none; font-weight:700; margin:14px 10px 0 0; }
+  .btn.alt { background:transparent; color:var(--ink); border:1px solid var(--line); }
+  .vs { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:14px; margin-top:16px; }
+  .vcol { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px; } .vcol h3 { margin-bottom:8px; }
+  .vcol ul { margin-left:18px; color:var(--muted); font-size:.93rem; }
+  .toc { display:flex; flex-wrap:wrap; gap:8px; margin:18px 0 6px; }
+  .toc a { border:1px solid var(--line); background:var(--card); border-radius:999px; padding:5px 12px; font-size:.82rem; color:var(--muted); text-decoration:none; }
+  .toc a:hover { color:var(--ink); border-color:var(--muted); }
+  footer { margin-top:56px; border-top:1px solid var(--line); padding-top:18px; color:var(--muted); font-size:.88rem; }
+
+  .dsec { background:var(--card); border:1px solid var(--line); border-top:6px solid var(--c,var(--accent)); border-radius:16px; padding:22px 22px 16px; margin-top:26px; scroll-margin-top:16px; }
+  .dsec h2 { font-size:1.25rem; display:flex; align-items:center; gap:10px; }
+  .dsec h2 .ln { flex:none; width:32px; height:32px; border-radius:50%; background:var(--c,var(--accent)); color:#fff; display:inline-flex; align-items:center; justify-content:center; font-size:.95rem; font-weight:800; }
+  .dsec p.d { color:var(--muted); font-size:.95rem; margin:6px 0 4px; }
+  .dsec svg { width:100%; height:auto; display:block; margin-top:10px; } .dsec .foot { margin-top:8px; font-size:.92rem; }
+  .box { fill:var(--card); stroke:var(--c,var(--accent)); stroke-width:2; }
+  .soft { fill:var(--bg); stroke:var(--line); stroke-width:1.5; }
+  .dead { fill:var(--bg); stroke:var(--muted); stroke-width:1.5; stroke-dasharray:6 5; }
+  .t { font:600 14px -apple-system,"Segoe UI",sans-serif; fill:var(--ink); }
+  .s { font:12px -apple-system,"Segoe UI",sans-serif; fill:var(--muted); } .m { text-anchor:middle; }
+  .arr { stroke:#64748b; stroke-width:2; fill:none; marker-end:url(#arw); } .dash { stroke-dasharray:6 5; }
+  .life { stroke:#94a3b8; stroke-width:1.5; stroke-dasharray:4 5; }
+  .nc { fill:var(--c,var(--accent)); } .nt { font:700 12px -apple-system,sans-serif; fill:#fff; text-anchor:middle; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs><marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#64748b"/></marker></defs></svg>
+<div class="wrap">
+<header>
+  <p><a href="index.html">← Back to the course home</a></p>
+  <h1>⏮️ Before · why · "agentic" · the future</h1>
+  <p class="sub">Every tool replaced something worse and points at something next. This page tells the
+  agents story in four parts: <b>what came before</b>, <b>why agents were born</b>, <b>what the word
+  "agentic" actually means</b>, and <b>an honest look ahead</b>.</p>
+  <nav class="toc">
+    <a href="#before">⏮️ Before</a><a href="#why">🐣 Why agents were born</a>
+    <a href="#agentic">🤔 What "agentic" means</a><a href="#future">🔮 The future</a>
+  </nav>
+</header>
+
+<section class="dsec" id="before" style="--c:#0d9488">
+  <h2><span class="ln">⏮️</span> Before agents — the five eras</h2>
+  <p class="d">Each era kept the previous one's gift and fixed its gap.</p>
+  <svg viewBox="0 0 940 260" role="img"><rect class="box" x="30" y="40" width="160" height="80" rx="12"/><text class="t m" x="110" y="70">⚙️ scripts &amp; RPA</text><text class="s m" x="110" y="94">wind-up toys</text><g transform="translate(30,40)"><circle r="11" class="nc"/><text class="nt" dy="4">1</text></g><rect class="box" x="220" y="40" width="160" height="80" rx="12"/><text class="t m" x="300" y="70">🗣️ chatbots</text><text class="s m" x="300" y="94">'22-23: all advice</text><g transform="translate(220,40)"><circle r="11" class="nc"/><text class="nt" dy="4">2</text></g><rect class="box" x="410" y="40" width="170" height="80" rx="12"/><text class="t m" x="495" y="70">🧰 tool calling</text><text class="s m" x="495" y="94">2023: first passes</text><g transform="translate(410,40)"><circle r="11" class="nc"/><text class="nt" dy="4">3</text></g><rect class="box" x="610" y="40" width="160" height="80" rx="12"/><text class="t m" x="690" y="70">🔁 agent loops</text><text class="s m" x="690" y="94">'23-24: hype+crash</text><g transform="translate(610,40)"><circle r="11" class="nc"/><text class="nt" dy="4">4</text></g><rect class="box" x="800" y="40" width="110" height="80" rx="12"/><text class="t m" x="855" y="70">🔌 today</text><text class="s m" x="855" y="94">gated + MCP</text><g transform="translate(800,40)"><circle r="11" class="nc"/><text class="nt" dy="4">5</text></g><rect class="box" x="220" y="160" width="540" height="70" rx="12"/><text class="t m" x="490" y="190">📉 the AutoGPT lesson: loops without guardrails and evals ran in circles —</text><text class="s m" x="490" y="214">the crash taught the field lessons 05 and 06</text><line class="arr" x1="190" y1="80" x2="216" y2="80"/><line class="arr" x1="380" y1="80" x2="406" y2="80"/><line class="arr" x1="580" y1="80" x2="606" y2="80"/><line class="arr" x1="770" y1="80" x2="796" y2="80"/><line class="arr dash" x1="670" y1="120" x2="520" y2="156"/><text class="s m" x="470" y="248">each era kept the previous one's gift and fixed its gap</text></svg>
+  <p class="d" style="margin-top:12px"><b>⚙️ Scripts &amp; RPA (the long before):</b> automation meant
+  wind-up toys — exact recorded steps, brittle as glass. RPA bots clicked pixel coordinates and
+  shattered when a button moved. Anything requiring judgment stayed human.</p>
+  <p class="d"><b>🗣️ Chatbots (2022–23):</b> suddenly machines could REASON in language — brilliant
+  advisors with no hands. "Here's how you'd book that trip" … but nothing got booked. All advice,
+  zero outcomes (lesson 01's reciter).</p>
+  <p class="d"><b>🧰 Tool calling (2023):</b> model APIs learned to emit structured function calls —
+  the first hall passes 🎫. One call per turn: useful, but a human still drove the sequence.</p>
+  <p class="d"><b>🔁 Agent loops (2023–24):</b> ReAct wired reasoning to tools in a LOOP — and the
+  hype arrived: AutoGPT-style "fully autonomous" agents amazed on demos and then ran in circles,
+  burned tokens, drifted off-goal. <b>The crash was the curriculum:</b> loops without guardrails
+  (L05) and evals (L06) fail — publicly.</p>
+  <p class="d"><b>🔌 Today:</b> production agents are narrower and humbler — scoped tools, write
+  gates, budgets, logs — and MCP standardizes the tool belt so capabilities are shared parts, not
+  private wiring. Boring-on-purpose is winning again (the k8s course's motto returns).</p>
+</section>
+
+<section class="dsec" id="why" style="--c:#0d9488">
+  <h2><span class="ln">🐣</span> Why agents were born — six forces</h2>
+  <p class="d">No single invention — a convergence:</p>
+  <div class="vs">
+    <div class="vcol"><h3>💰 The advice–outcome gap</h3><ul>
+      <li>advice is cheap; OUTCOMES are what work actually is</li>
+      <li>the whole economic prize sat one loop away from chatbots</li></ul></div>
+    <div class="vcol"><h3>🧠 Models crossed the planning bar</h3><ul>
+      <li>good-enough multi-step reasoning + reliable structured output</li>
+      <li>before that bar, loops just compounded nonsense faster</li></ul></div>
+    <div class="vcol"><h3>🧰 Tool-calling APIs</h3><ul>
+      <li>vendors made "model proposes a call" a first-class primitive</li>
+      <li>the harness pattern became easy to build (you read one in L07!)</li></ul></div>
+    <div class="vcol"><h3>🪑 Bigger desks</h3><ul>
+      <li>long contexts made scratchpads + tool results fit (L04)</li>
+      <li>without room to observe, the loop starves</li></ul></div>
+    <div class="vcol"><h3>🔌 Standard plugs (MCP)</h3><ul>
+      <li>tools became an ecosystem, not per-app wiring</li>
+      <li>N×M adapters → N+M (the MCP school's whole story)</li></ul></div>
+    <div class="vcol"><h3>📉 The hype crash itself</h3><ul>
+      <li>2023's failures taught guardrails, evals, human gates</li>
+      <li>maturity, not magic, is what shipped in the end</li></ul></div>
+  </div>
+</section>
+
+<section class="dsec" id="agentic" style="--c:#be123c">
+  <h2><span class="ln">🤔</span> What does "agentic" actually mean?</h2>
+  <p class="d"><b>Agency</b> = the capacity to pursue a goal by choosing and taking actions.
+  <b>Agentic</b> = the adjective: how much of that capacity a system has. It's a DIAL, not a switch:</p>
+  <svg viewBox="0 0 940 300" role="img"><line class="arr" x1="60" y1="80" x2="900" y2="80"/><text class="s m" x="80" y="50">less agency</text><text class="s m" x="860" y="50">more agency</text><rect class="soft" x="40" y="100" width="150" height="80" rx="10"/><text class="s m" x="115" y="128">0 · answer only</text><text class="s m" x="115" y="150">a chatbot reply</text><g transform="translate(60,80)"><circle r="11" class="nc"/><text class="nt" dy="4">0</text></g><rect class="soft" x="210" y="100" width="150" height="80" rx="10"/><text class="s m" x="285" y="128">1 · one tool call</text><text class="s m" x="285" y="150">model fills arguments</text><g transform="translate(285,80)"><circle r="11" class="nc"/><text class="nt" dy="4">1</text></g><rect class="soft" x="380" y="100" width="150" height="80" rx="10"/><text class="s m" x="455" y="128">2 · chooses tools</text><text class="s m" x="455" y="150">which + when</text><g transform="translate(455,80)"><circle r="11" class="nc"/><text class="nt" dy="4">2</text></g><rect class="box" x="550" y="100" width="150" height="80" rx="10"/><text class="s m" x="625" y="128">3 · multi-step loop</text><text class="s m" x="625" y="150">think·act·observe</text><g transform="translate(625,80)"><circle r="11" class="nc"/><text class="nt" dy="4">3</text></g><rect class="box" x="720" y="100" width="190" height="80" rx="10"/><text class="s m" x="815" y="124">4 · loops that WRITE</text><text class="s m" x="815" y="146">gated by humans 🚧</text><text class="s m" x="815" y="168">5 · long-horizon + budgets</text><g transform="translate(815,80)"><circle r="11" class="nc"/><text class="nt" dy="4">4</text></g><text class="s m" x="470" y="225">“agentic” is a DIAL, not a switch — turn it only as far as your guardrails and evals have earned</text><text class="s m" x="470" y="260">grammar: agent (the noun) · agency (the property: pursuing goals via chosen actions) · agentic (the adjective)</text></svg>
+  <p class="d" style="margin-top:12px"><b>"Agentic workflow"</b> = a pipeline where model-driven steps
+  choose the path (vs a fixed script). <b>"Agentic AI"</b> in a product pitch = ask lesson 01's
+  checklist: what's the goal? which tools? what loop? which guardrails? No answers = a chatbot in a
+  trench coat 🕵️. And the dial has a price sticker: every notch right multiplies capability AND
+  the need for L05's rules — turn it only as far as your evals prove you've earned.</p>
+</section>
+
+<section class="dsec" id="future" style="--c:#be123c">
+  <h2><span class="ln">🔮</span> The future — an honest outlook</h2>
+  <p class="d">Informed extrapolation, not prophecy — hold it loosely:</p>
+  <svg viewBox="0 0 940 300" role="img"><rect class="box" x="40" y="40" width="280" height="110" rx="12"/><text class="t m" x="180" y="70">📈 near (now-ish)</text><text class="s m" x="180" y="96">longer tasks · computer use ·</text><text class="s m" x="180" y="118">real memory · evals as standard ·</text><text class="s m" x="180" y="140">MCP tool ecosystems 🔌</text><g transform="translate(40,40)"><circle r="11" class="nc"/><text class="nt" dy="4">1</text></g><rect class="box" x="350" y="40" width="280" height="110" rx="12"/><text class="t m" x="490" y="70">🏢 next</text><text class="s m" x="490" y="96">teams of agents with foremen ·</text><text class="s m" x="490" y="118">agent-ops as a job · humans shift</text><text class="s m" x="490" y="140">to reviewing &amp; goal-setting 🚧</text><g transform="translate(350,40)"><circle r="11" class="nc"/><text class="nt" dy="4">2</text></g><rect class="box" x="660" y="40" width="250" height="110" rx="12"/><text class="t m" x="785" y="70">❓ open questions</text><text class="s m" x="785" y="96">reliability at long horizons ·</text><text class="s m" x="785" y="118">injection &amp; security · audit &amp;</text><text class="s m" x="785" y="140">accountability · workflow change</text><g transform="translate(660,40)"><circle r="11" class="nc"/><text class="nt" dy="4">3</text></g><rect class="soft" x="140" y="185" width="660" height="80" rx="12"/><text class="t m" x="470" y="215">🧭 the safe bet: the LOOP stays; the leash lengthens as guardrails + evals mature</text><text class="s m" x="470" y="241">whatever the headlines say, it will still be think→act→observe with better tools and better brakes</text></svg>
+  <p class="d" style="margin-top:12px"><b>📈 Near:</b> longer-horizon tasks (hours, not minutes) as
+  memory and self-verification improve · <b>computer use</b> (agents driving real UIs) maturing from
+  demo to tool · evals and observability becoming as standard as tests are for code · MCP-style
+  ecosystems making belts a marketplace.</p>
+  <p class="d"><b>🏢 Next:</b> teams of agents with foreman patterns (L08) in real org charts ·
+  "agent ops" as a role (budgets, logs, evals, incident review — the k8s course's instincts, for
+  loops) · humans shifting up the stack: setting goals, reviewing diffs, owning the signatures 🚧.</p>
+  <p class="d"><b>❓ Open questions the field hasn't earned answers to:</b> reliability over very
+  long horizons (compounding never sleeps — L06) · security against injection when agents read the
+  open web · accountability and audit when loops act at scale · and how work itself reorganizes
+  around drafts-flow-signatures-gate. Anyone selling certainty on these is selling. 😄</p>
+  <p class="d"><b>🧭 The safe bet:</b> the loop stays. Whatever the headlines, it will still be
+  think → act → observe — with better tools, longer leashes, and (if we're wise) better brakes.
+  You already know the machine; the future is mostly its knobs.</p>
+</section>
+
+<footer>
+  Learn Agents School · <a href="index.html">Course home</a> ·
+  <a href="patterns.html">The 5 patterns</a> ·
+  <a href="lesson-diagrams.html">Lesson diagrams</a> ·
+  <a href="https://github.com/BaluRaut/learn-agents-school">GitHub</a>
+</footer>
+</div>
+</body>
+</html>
