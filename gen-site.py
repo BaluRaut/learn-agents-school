@@ -64,7 +64,7 @@ MARKER = '<svg width="0" height="0" style="position:absolute"><defs><marker id="
 def head(title, desc):
     return (f'<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
       f'<meta name="viewport" content="width=device-width, initial-scale=1">\n<title>{title}</title>\n'
-      f'<meta name="description" content="{desc}">\n<style>{BASE_CSS}{DSEC_CSS}</style>\n</head>\n<body>\n')
+      f'<meta name="description" content="{desc}">\n<meta property="og:title" content="{title}">\n<meta property="og:description" content="{desc}">\n<meta property="og:image" content="https://baluraut.github.io/learn-agents-school/images/big-picture-4k.png">\n<meta property="og:type" content="website">\n<meta name="twitter:card" content="summary_large_image">\n<style>{BASE_CSS}{DSEC_CSS}</style>\n</head>\n<body>\n')
 
 B='<rect class="box"'; S='<rect class="soft"'; D='<rect class="dead"'; DASH=' dash'
 def t(x,y,s): return f'<text class="t m" x="{x}" y="{y}">{s}</text>'
@@ -227,6 +227,8 @@ python3 agent/agent.py --drive    # YOU are the brain: pick every action</code><
   <a class="btn alt" href="patterns.html">👯 The 5 patterns</a>
   <a class="btn alt" href="history-and-future.html">⏮️ Before · why · agentic · future</a>
   <a class="btn alt" href="lesson-diagrams.html">📐 All 8 lesson diagrams</a>
+  <a class="btn alt" href="quiz.html">🧪 Quiz</a>
+  <a class="btn alt" href="study-plan.html">🗓️ Study plan</a>
   <a class="btn alt" href="https://baluraut.github.io/learn-mcp-school/">🔌 The MCP school</a>
 
   <footer>
@@ -236,6 +238,8 @@ python3 agent/agent.py --drive    # YOU are the brain: pick every action</code><
     <a href="https://baluraut.github.io/learn-mcp-school/">MCP</a>
    ·
   <a href="https://baluraut.github.io/school/">🏫 all schools</a>
+ ·
+  <a href="https://github.com/BaluRaut/learn-agents-school/issues">🐛 found a mistake?</a>
 </footer>
 </div>
 </body>
@@ -261,6 +265,8 @@ DIAGRAMS = head("Lesson diagrams — Learn Agents School",
   <a href="https://github.com/BaluRaut/learn-agents-school">GitHub</a>
  ·
   <a href="https://baluraut.github.io/school/">🏫 all schools</a>
+ ·
+  <a href="https://github.com/BaluRaut/learn-agents-school/issues">🐛 found a mistake?</a>
 </footer>
 </div>
 </body>
@@ -378,6 +384,8 @@ PATTERNS = head("5 agent patterns — Learn Agents School",
   <a href="https://github.com/BaluRaut/learn-agents-school">GitHub</a>
  ·
   <a href="https://baluraut.github.io/school/">🏫 all schools</a>
+ ·
+  <a href="https://github.com/BaluRaut/learn-agents-school/issues">🐛 found a mistake?</a>
 </footer>
 </div>
 </body>
