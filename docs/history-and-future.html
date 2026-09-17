@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="mr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Before · why · agentic · future — Learn Agents School</title>
-<meta name="description" content="The history of AI agents (what came before, why agents were born), what the word agentic actually means, and a grounded outlook on where agents are going.">
-<meta property="og:title" content="Before · why · agentic · future — Learn Agents School">
-<meta property="og:description" content="The history of AI agents (what came before, why agents were born), what the word agentic actually means, and a grounded outlook on where agents are going.">
-<meta property="og:image" content="https://baluraut.github.io/learn-agents-school/images/big-picture-4k.png">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary_large_image">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title data-en="Before · why · agentic · future — Learn Agents School">आधी · का · agentic · भविष्य — Learn Agents School</title>
+<meta content="The history of AI agents (what came before, why agents were born), what the word agentic actually means, and a grounded outlook on where agents are going." name="description"/>
+<meta content="Before · why · agentic · future — Learn Agents School" property="og:title"/>
+<meta content="The history of AI agents (what came before, why agents were born), what the word agentic actually means, and a grounded outlook on where agents are going." property="og:description"/>
+<meta content="https://baluraut.github.io/learn-agents-school/images/big-picture-4k.png" property="og:image"/>
+<meta content="website" property="og:type"/>
+<meta content="summary_large_image" name="twitter:card"/>
 <style>
   :root { --bg:#f8fafc; --card:#fff; --ink:#0f172a; --muted:#475569; --line:#e2e8f0; --accent:#0d9488; --ok:#16a34a; --blue:#2563eb; }
   @media (prefers-color-scheme: dark) { :root { --bg:#0b1220; --card:#131c2e; --ink:#e2e8f0; --muted:#94a3b8; --line:#253349; } }
@@ -54,106 +55,125 @@
   .life { stroke:#94a3b8; stroke-width:1.5; stroke-dasharray:4 5; }
   .nc { fill:var(--c,var(--accent)); } .nt { font:700 12px -apple-system,sans-serif; fill:#fff; text-anchor:middle; }
 </style>
-</head>
-<body>
-<svg width="0" height="0" style="position:absolute"><defs><marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#64748b"/></marker></defs></svg>
+
+<style id="i18n-css">
+#lang-pick{position:fixed;top:10px;right:10px;z-index:9999;font:600 .85rem -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;background:var(--card,#fff);color:var(--ink,#0f172a);border:1px solid var(--line,#e2e8f0);border-radius:999px;padding:6px 12px;box-shadow:0 2px 10px rgba(0,0,0,.08);cursor:pointer}
+html[lang="mr"] body{font-family:"Noto Sans Devanagari","Mukta","Devanagari Sangam MN","Nirmala UI",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+html[lang="mr"] svg text{font-family:"Noto Sans Devanagari","Mukta","Devanagari Sangam MN","Nirmala UI",sans-serif}
+@media print{#lang-pick{display:none}}
+</style></head>
+<body><select aria-label="Language / भाषा" id="lang-pick" onchange="schoolSetLang(this.value)">
+<option value="mr">🇮🇳 मराठी</option><option value="en">🇬🇧 English</option></select>
+<svg height="0" style="position:absolute" width="0"><defs><marker id="arw" markerheight="7" markerwidth="7" orient="auto-start-reverse" refx="9" refy="5" viewbox="0 0 10 10"><path d="M0 0 L10 5 L0 10 z" fill="#64748b"></path></marker></defs></svg>
 <div class="wrap">
 <header>
-  <p><a href="index.html">← Back to the course home</a></p>
-  <h1>⏮️ Before · why · "agentic" · the future</h1>
-  <p class="sub">Every tool replaced something worse and points at something next. This page tells the
-  agents story in four parts: <b>what came before</b>, <b>why agents were born</b>, <b>what the word
-  "agentic" actually means</b>, and <b>an honest look ahead</b>.</p>
-  <nav class="toc">
-    <a href="#before">⏮️ Before</a><a href="#why">🐣 Why agents were born</a>
-    <a href="#agentic">🤔 What "agentic" means</a><a href="#future">🔮 The future</a>
-  </nav>
+<p data-en='&lt;a href="index.html"&gt;← Back to the course home&lt;/a&gt;'><a href="index.html">← कोर्सच्या मुख्य पानाकडे परत</a></p>
+<h1 data-en='⏮️ Before · why · "agentic" · the future'>⏮️ आधी · का · "agentic" · भविष्य</h1>
+<p class="sub" data-en='Every tool replaced something worse and points at something next. This page tells the
+  agents story in four parts: &lt;b&gt;what came before&lt;/b&gt;, &lt;b&gt;why agents were born&lt;/b&gt;, &lt;b&gt;what the word
+  "agentic" actually means&lt;/b&gt;, and &lt;b&gt;an honest look ahead&lt;/b&gt;.'>प्रत्येक साधनाने काहीतरी वाईट गोष्ट बदलली आणि पुढच्या गोष्टीकडे बोट दाखवते. हे पान एजंट्सची गोष्ट चार भागांत सांगते: <b>आधी काय होते</b>, <b>एजंट्स का जन्मले</b>, <b>"agentic" या शब्दाचा खरा अर्थ काय</b>, आणि <b>पुढचा प्रामाणिक अंदाज</b>.</p>
+<nav class="toc" data-en='
+&lt;a href="#before"&gt;⏮️ Before&lt;/a&gt;&lt;a href="#why"&gt;🐣 Why agents were born&lt;/a&gt;
+&lt;a href="#agentic"&gt;🤔 What "agentic" means&lt;/a&gt;&lt;a href="#future"&gt;🔮 The future&lt;/a&gt;
+'><a href="#before">⏮️ आधी</a><a href="#why">🐣 एजंट्स का जन्मले</a> <a href="#agentic">🤔 "agentic" म्हणजे काय</a><a href="#future">🔮 भविष्य</a></nav>
 </header>
-
 <section class="dsec" id="before" style="--c:#0d9488">
-  <h2><span class="ln">⏮️</span> Before agents — the five eras</h2>
-  <p class="d">Each era kept the previous one's gift and fixed its gap.</p>
-  <svg viewBox="0 0 940 260" role="img"><rect class="box" x="30" y="40" width="160" height="80" rx="12"/><text class="t m" x="110" y="70">⚙️ scripts &amp; RPA</text><text class="s m" x="110" y="94">wind-up toys</text><g transform="translate(30,40)"><circle r="11" class="nc"/><text class="nt" dy="4">1</text></g><rect class="box" x="220" y="40" width="160" height="80" rx="12"/><text class="t m" x="300" y="70">🗣️ chatbots</text><text class="s m" x="300" y="94">'22-23: all advice</text><g transform="translate(220,40)"><circle r="11" class="nc"/><text class="nt" dy="4">2</text></g><rect class="box" x="410" y="40" width="170" height="80" rx="12"/><text class="t m" x="495" y="70">🧰 tool calling</text><text class="s m" x="495" y="94">2023: first passes</text><g transform="translate(410,40)"><circle r="11" class="nc"/><text class="nt" dy="4">3</text></g><rect class="box" x="610" y="40" width="160" height="80" rx="12"/><text class="t m" x="690" y="70">🔁 agent loops</text><text class="s m" x="690" y="94">'23-24: hype+crash</text><g transform="translate(610,40)"><circle r="11" class="nc"/><text class="nt" dy="4">4</text></g><rect class="box" x="800" y="40" width="110" height="80" rx="12"/><text class="t m" x="855" y="70">🔌 today</text><text class="s m" x="855" y="94">gated + MCP</text><g transform="translate(800,40)"><circle r="11" class="nc"/><text class="nt" dy="4">5</text></g><rect class="box" x="220" y="160" width="540" height="70" rx="12"/><text class="t m" x="490" y="190">📉 the AutoGPT lesson: loops without guardrails and evals ran in circles —</text><text class="s m" x="490" y="214">the crash taught the field lessons 05 and 06</text><line class="arr" x1="190" y1="80" x2="216" y2="80"/><line class="arr" x1="380" y1="80" x2="406" y2="80"/><line class="arr" x1="580" y1="80" x2="606" y2="80"/><line class="arr" x1="770" y1="80" x2="796" y2="80"/><line class="arr dash" x1="670" y1="120" x2="520" y2="156"/><text class="s m" x="470" y="248">each era kept the previous one's gift and fixed its gap</text></svg>
-  <p class="d" style="margin-top:12px"><b>⚙️ Scripts &amp; RPA (the long before):</b> automation meant
+<h2 data-en='&lt;span class="ln"&gt;⏮️&lt;/span&gt; Before agents — the five eras'><span class="ln">⏮️</span> एजंट्सच्या आधी — पाच युगे</h2>
+<p class="d" data-en="Each era kept the previous one's gift and fixed its gap.">प्रत्येक युगाने आधीच्याची देणगी ठेवली आणि त्याची त्रुटी दुरुस्त केली.</p>
+<svg role="img" viewbox="0 0 940 260"><rect class="box" height="80" rx="12" width="160" x="30" y="40"></rect><text class="t m" data-en="⚙️ scripts &amp;amp; RPA" x="110" y="70">⚙️ स्क्रिप्ट &amp; RPA</text><text class="s m" data-en="wind-up toys" x="110" y="94">चावीची खेळणी</text><g transform="translate(30,40)"><circle class="nc" r="11"></circle><text class="nt" dy="4">1</text></g><rect class="box" height="80" rx="12" width="160" x="220" y="40"></rect><text class="t m" x="300" y="70">🗣️ chatbots</text><text class="s m" data-en="'22-23: all advice" x="300" y="94">'22-23: फक्त सल्ला</text><g transform="translate(220,40)"><circle class="nc" r="11"></circle><text class="nt" dy="4">2</text></g><rect class="box" height="80" rx="12" width="170" x="410" y="40"></rect><text class="t m" x="495" y="70">🧰 tool calling</text><text class="s m" data-en="2023: first passes" x="495" y="94">2023: पहिले पास</text><g transform="translate(410,40)"><circle class="nc" r="11"></circle><text class="nt" dy="4">3</text></g><rect class="box" height="80" rx="12" width="160" x="610" y="40"></rect><text class="t m" data-en="🔁 agent loops" x="690" y="70">🔁 agent लूप</text><text class="s m" data-en="'23-24: hype+crash" x="690" y="94">'23-24: hype+कोसळणे</text><g transform="translate(610,40)"><circle class="nc" r="11"></circle><text class="nt" dy="4">4</text></g><rect class="box" height="80" rx="12" width="110" x="800" y="40"></rect><text class="t m" data-en="🔌 today" x="855" y="70">🔌 आज</text><text class="s m" x="855" y="94">gated + MCP</text><g transform="translate(800,40)"><circle class="nc" r="11"></circle><text class="nt" dy="4">5</text></g><rect class="box" height="70" rx="12" width="540" x="220" y="160"></rect><text class="t m" data-en="📉 the AutoGPT lesson: loops without guardrails and evals ran in circles —" x="490" y="190">📉 AutoGPT चा धडा: guardrails आणि evals शिवायचे लूप गोल फिरत राहिले —</text><text class="s m" data-en="the crash taught the field lessons 05 and 06" x="490" y="214">कोसळण्याने क्षेत्राला धडे 05 आणि 06 शिकवले</text><line class="arr" x1="190" x2="216" y1="80" y2="80"></line><line class="arr" x1="380" x2="406" y1="80" y2="80"></line><line class="arr" x1="580" x2="606" y1="80" y2="80"></line><line class="arr" x1="770" x2="796" y1="80" y2="80"></line><line class="arr dash" x1="670" x2="520" y1="120" y2="156"></line><text class="s m" data-en="each era kept the previous one's gift and fixed its gap" x="470" y="248">प्रत्येक युगाने आधीच्याची देणगी ठेवली आणि त्याची त्रुटी दुरुस्त केली</text></svg>
+<p class="d" data-en="&lt;b&gt;⚙️ Scripts &amp;amp; RPA (the long before):&lt;/b&gt; automation meant
   wind-up toys — exact recorded steps, brittle as glass. RPA bots clicked pixel coordinates and
-  shattered when a button moved. Anything requiring judgment stayed human.</p>
-  <p class="d"><b>🗣️ Chatbots (2022–23):</b> suddenly machines could REASON in language — brilliant
-  advisors with no hands. "Here's how you'd book that trip" … but nothing got booked. All advice,
-  zero outcomes (lesson 01's reciter).</p>
-  <p class="d"><b>🧰 Tool calling (2023):</b> model APIs learned to emit structured function calls —
-  the first hall passes 🎫. One call per turn: useful, but a human still drove the sequence.</p>
-  <p class="d"><b>🔁 Agent loops (2023–24):</b> ReAct wired reasoning to tools in a LOOP — and the
+  shattered when a button moved. Anything requiring judgment stayed human." style="margin-top:12px"><b>⚙️ स्क्रिप्ट &amp; RPA (बराच आधीचा काळ):</b> automation म्हणजे चावीची खेळणी — नेमक्या नोंदवलेल्या पायऱ्या, काचेसारख्या ठिसूळ. RPA bots pixel निर्देशांकांवर क्लिक करत आणि बटण हलले की तुटत. निर्णय लागणारे काहीही माणसाकडेच राहिले.</p>
+<p class="d" data-en="&lt;b&gt;🗣️ Chatbots (2022–23):&lt;/b&gt; suddenly machines could REASON in language — brilliant
+  advisors with no hands. &quot;Here's how you'd book that trip&quot; … but nothing got booked. All advice,
+  zero outcomes (lesson 01's reciter)."><b>🗣️ Chatbots (2022–23):</b> अचानक मशीन भाषेत विचार करू लागली — हात नसलेले हुशार सल्लागार. "ती सहल तुम्ही अशी बुक कराल" … पण काहीच बुक झाले नाही. फक्त सल्ला, शून्य परिणाम (धडा 01 चा पाठ म्हणणारा).</p>
+<p class="d" data-en="&lt;b&gt;🧰 Tool calling (2023):&lt;/b&gt; model APIs learned to emit structured function calls —
+  the first hall passes 🎫. One call per turn: useful, but a human still drove the sequence."><b>🧰 Tool calling (2023):</b> मॉडेल APIs रचनाबद्ध function calls देऊ लागले — पहिले हॉल पास 🎫. प्रत्येक वळणाला एक कॉल: उपयुक्त, पण क्रम अजूनही माणूस चालवत होता.</p>
+<p class="d" data-en='&lt;b&gt;🔁 Agent loops (2023–24):&lt;/b&gt; ReAct wired reasoning to tools in a LOOP — and the
   hype arrived: AutoGPT-style "fully autonomous" agents amazed on demos and then ran in circles,
-  burned tokens, drifted off-goal. <b>The crash was the curriculum:</b> loops without guardrails
-  (L05) and evals (L06) fail — publicly.</p>
-  <p class="d"><b>🔌 Today:</b> production agents are narrower and humbler — scoped tools, write
+  burned tokens, drifted off-goal. &lt;b&gt;The crash was the curriculum:&lt;/b&gt; loops without guardrails
+  (L05) and evals (L06) fail — publicly.'><b>🔁 Agent लूप (2023–24):</b> ReAct ने विचार आणि साधने लूपमध्ये जोडली — आणि hype आले: AutoGPT-शैलीचे "पूर्ण स्वायत्त" एजंट demo मध्ये चकित करत आणि मग गोल फिरत, tokens जाळत, ध्येयापासून भरकटत. <b>कोसळणे हाच अभ्यासक्रम होता:</b> guardrails (L05) आणि evals (L06) शिवायचे लूप फसतात — जाहीरपणे.</p>
+<p class="d" data-en="&lt;b&gt;🔌 Today:&lt;/b&gt; production agents are narrower and humbler — scoped tools, write
   gates, budgets, logs — and MCP standardizes the tool belt so capabilities are shared parts, not
-  private wiring. Boring-on-purpose is winning again (the k8s course's motto returns).</p>
+  private wiring. Boring-on-purpose is winning again (the k8s course's motto returns)."><b>🔌 आज:</b> production एजंट अरुंद आणि नम्र आहेत — scoped साधने, write gates, budgets, logs — आणि MCP साधनांचा पट्टा मानक बनवते म्हणजे क्षमता खाजगी वायरिंग नव्हे, वाटता येणारे भाग. मुद्दाम-कंटाळवाणे पुन्हा जिंकते आहे (k8s कोर्सचे ब्रीदवाक्य परत).</p>
 </section>
-
 <section class="dsec" id="why" style="--c:#0d9488">
-  <h2><span class="ln">🐣</span> Why agents were born — six forces</h2>
-  <p class="d">No single invention — a convergence:</p>
-  <div class="vs">
-    <div class="vcol"><h3>💰 The advice–outcome gap</h3><ul>
-      <li>advice is cheap; OUTCOMES are what work actually is</li>
-      <li>the whole economic prize sat one loop away from chatbots</li></ul></div>
-    <div class="vcol"><h3>🧠 Models crossed the planning bar</h3><ul>
-      <li>good-enough multi-step reasoning + reliable structured output</li>
-      <li>before that bar, loops just compounded nonsense faster</li></ul></div>
-    <div class="vcol"><h3>🧰 Tool-calling APIs</h3><ul>
-      <li>vendors made "model proposes a call" a first-class primitive</li>
-      <li>the harness pattern became easy to build (you read one in L07!)</li></ul></div>
-    <div class="vcol"><h3>🪑 Bigger desks</h3><ul>
-      <li>long contexts made scratchpads + tool results fit (L04)</li>
-      <li>without room to observe, the loop starves</li></ul></div>
-    <div class="vcol"><h3>🔌 Standard plugs (MCP)</h3><ul>
-      <li>tools became an ecosystem, not per-app wiring</li>
-      <li>N×M adapters → N+M (the MCP school's whole story)</li></ul></div>
-    <div class="vcol"><h3>📉 The hype crash itself</h3><ul>
-      <li>2023's failures taught guardrails, evals, human gates</li>
-      <li>maturity, not magic, is what shipped in the end</li></ul></div>
-  </div>
+<h2 data-en='&lt;span class="ln"&gt;🐣&lt;/span&gt; Why agents were born — six forces'><span class="ln">🐣</span> एजंट्स का जन्मले — सहा शक्ती</h2>
+<p class="d" data-en="No single invention — a convergence:">एकच शोध नव्हे — एक संगम:</p>
+<div class="vs">
+<div class="vcol"><h3 data-en="💰 The advice–outcome gap">💰 सल्ला–परिणाम दरी</h3><ul>
+<li data-en="advice is cheap; OUTCOMES are what work actually is">सल्ला स्वस्त; परिणाम हेच खरे काम</li>
+<li data-en="the whole economic prize sat one loop away from chatbots">संपूर्ण आर्थिक बक्षीस chatbots पासून एक लूप दूर बसले होते</li></ul></div>
+<div class="vcol"><h3 data-en="🧠 Models crossed the planning bar">🧠 मॉडेलनी नियोजनाची पातळी ओलांडली</h3><ul>
+<li data-en="good-enough multi-step reasoning + reliable structured output">पुरेसे बहु-पायरी तर्क + विश्वसनीय रचनाबद्ध output</li>
+<li data-en="before that bar, loops just compounded nonsense faster">त्या पातळीआधी लूप फक्त मूर्खपणा वेगाने साचवत</li></ul></div>
+<div class="vcol"><h3>🧰 Tool-calling APIs</h3><ul>
+<li data-en='vendors made "model proposes a call" a first-class primitive'>vendors नी "मॉडेल कॉल सुचवते" ला मूलभूत घटक बनवले</li>
+<li data-en="the harness pattern became easy to build (you read one in L07!)">harness पॅटर्न बांधणे सोपे झाले (तुम्ही L07 मध्ये एक वाचला!)</li></ul></div>
+<div class="vcol"><h3 data-en="🪑 Bigger desks">🪑 मोठी टेबले</h3><ul>
+<li data-en="long contexts made scratchpads + tool results fit (L04)">लांब contexts मुळे scratchpads + साधनांचे निकाल मावले (L04)</li>
+<li data-en="without room to observe, the loop starves">निरीक्षणाला जागा नसेल तर लूप उपाशी राहतो</li></ul></div>
+<div class="vcol"><h3 data-en="🔌 Standard plugs (MCP)">🔌 मानक प्लग (MCP)</h3><ul>
+<li data-en="tools became an ecosystem, not per-app wiring">साधने प्रत्येक-ॲप वायरिंग नव्हे, परिसंस्था बनली</li>
+<li data-en="N×M adapters → N+M (the MCP school's whole story)">N×M adapters → N+M (MCP शाळेची संपूर्ण गोष्ट)</li></ul></div>
+<div class="vcol"><h3 data-en="📉 The hype crash itself">📉 खुद्द hype चे कोसळणे</h3><ul>
+<li data-en="2023's failures taught guardrails, evals, human gates">2023 च्या अपयशांनी guardrails, evals, माणसाची दारे शिकवली</li>
+<li data-en="maturity, not magic, is what shipped in the end">शेवटी जादू नव्हे, परिपक्वता पोहोचली</li></ul></div>
+</div>
 </section>
-
 <section class="dsec" id="agentic" style="--c:#be123c">
-  <h2><span class="ln">🤔</span> What does "agentic" actually mean?</h2>
-  <p class="d"><b>Agency</b> = the capacity to pursue a goal by choosing and taking actions.
-  <b>Agentic</b> = the adjective: how much of that capacity a system has. It's a DIAL, not a switch:</p>
-  <svg viewBox="0 0 940 300" role="img"><line class="arr" x1="60" y1="80" x2="900" y2="80"/><text class="s m" x="80" y="50">less agency</text><text class="s m" x="860" y="50">more agency</text><rect class="soft" x="40" y="100" width="150" height="80" rx="10"/><text class="s m" x="115" y="128">0 · answer only</text><text class="s m" x="115" y="150">a chatbot reply</text><g transform="translate(60,80)"><circle r="11" class="nc"/><text class="nt" dy="4">0</text></g><rect class="soft" x="210" y="100" width="150" height="80" rx="10"/><text class="s m" x="285" y="128">1 · one tool call</text><text class="s m" x="285" y="150">model fills arguments</text><g transform="translate(285,80)"><circle r="11" class="nc"/><text class="nt" dy="4">1</text></g><rect class="soft" x="380" y="100" width="150" height="80" rx="10"/><text class="s m" x="455" y="128">2 · chooses tools</text><text class="s m" x="455" y="150">which + when</text><g transform="translate(455,80)"><circle r="11" class="nc"/><text class="nt" dy="4">2</text></g><rect class="box" x="550" y="100" width="150" height="80" rx="10"/><text class="s m" x="625" y="128">3 · multi-step loop</text><text class="s m" x="625" y="150">think·act·observe</text><g transform="translate(625,80)"><circle r="11" class="nc"/><text class="nt" dy="4">3</text></g><rect class="box" x="720" y="100" width="190" height="80" rx="10"/><text class="s m" x="815" y="124">4 · loops that WRITE</text><text class="s m" x="815" y="146">gated by humans 🚧</text><text class="s m" x="815" y="168">5 · long-horizon + budgets</text><g transform="translate(815,80)"><circle r="11" class="nc"/><text class="nt" dy="4">4</text></g><text class="s m" x="470" y="225">“agentic” is a DIAL, not a switch — turn it only as far as your guardrails and evals have earned</text><text class="s m" x="470" y="260">grammar: agent (the noun) · agency (the property: pursuing goals via chosen actions) · agentic (the adjective)</text></svg>
-  <p class="d" style="margin-top:12px"><b>"Agentic workflow"</b> = a pipeline where model-driven steps
-  choose the path (vs a fixed script). <b>"Agentic AI"</b> in a product pitch = ask lesson 01's
+<h2 data-en='&lt;span class="ln"&gt;🤔&lt;/span&gt; What does "agentic" actually mean?'><span class="ln">🤔</span> "agentic" म्हणजे नेमके काय?</h2>
+<p class="d" data-en="&lt;b&gt;Agency&lt;/b&gt; = the capacity to pursue a goal by choosing and taking actions.
+  &lt;b&gt;Agentic&lt;/b&gt; = the adjective: how much of that capacity a system has. It's a DIAL, not a switch:"><b>Agency</b> = कृती निवडून आणि करून ध्येयाचा पाठपुरावा करण्याची क्षमता. <b>Agentic</b> = विशेषण: प्रणालीकडे ती क्षमता किती आहे. ते बटण नव्हे, नॉब आहे:</p>
+<svg role="img" viewbox="0 0 940 300"><line class="arr" x1="60" x2="900" y1="80" y2="80"></line><text class="s m" data-en="less agency" x="80" y="50">कमी agency</text><text class="s m" data-en="more agency" x="860" y="50">जास्त agency</text><rect class="soft" height="80" rx="10" width="150" x="40" y="100"></rect><text class="s m" data-en="0 · answer only" x="115" y="128">0 · फक्त उत्तर</text><text class="s m" data-en="a chatbot reply" x="115" y="150">chatbot चे उत्तर</text><g transform="translate(60,80)"><circle class="nc" r="11"></circle><text class="nt" dy="4">0</text></g><rect class="soft" height="80" rx="10" width="150" x="210" y="100"></rect><text class="s m" data-en="1 · one tool call" x="285" y="128">1 · एक tool call</text><text class="s m" data-en="model fills arguments" x="285" y="150">मॉडेल arguments भरते</text><g transform="translate(285,80)"><circle class="nc" r="11"></circle><text class="nt" dy="4">1</text></g><rect class="soft" height="80" rx="10" width="150" x="380" y="100"></rect><text class="s m" data-en="2 · chooses tools" x="455" y="128">2 · साधने निवडते</text><text class="s m" data-en="which + when" x="455" y="150">कोणते + कधी</text><g transform="translate(455,80)"><circle class="nc" r="11"></circle><text class="nt" dy="4">2</text></g><rect class="box" height="80" rx="10" width="150" x="550" y="100"></rect><text class="s m" data-en="3 · multi-step loop" x="625" y="128">3 · बहु-पायरी लूप</text><text class="s m" data-en="think·act·observe" x="625" y="150">विचार·कृती·निरीक्षण</text><g transform="translate(625,80)"><circle class="nc" r="11"></circle><text class="nt" dy="4">3</text></g><rect class="box" height="80" rx="10" width="190" x="720" y="100"></rect><text class="s m" data-en="4 · loops that WRITE" x="815" y="124">4 · लिहिणारे लूप</text><text class="s m" data-en="gated by humans 🚧" x="815" y="146">माणसांनी gated 🚧</text><text class="s m" data-en="5 · long-horizon + budgets" x="815" y="168">5 · दीर्घ पल्ला + budgets</text><g transform="translate(815,80)"><circle class="nc" r="11"></circle><text class="nt" dy="4">4</text></g><text class="s m" data-en="“agentic” is a DIAL, not a switch — turn it only as far as your guardrails and evals have earned" x="470" y="225">“agentic” हा नॉब आहे, बटण नव्हे — तुमच्या guardrails आणि evals नी कमावले तेवढाच फिरवा</text><text class="s m" data-en="grammar: agent (the noun) · agency (the property: pursuing goals via chosen actions) · agentic (the adjective)" x="470" y="260">व्याकरण: agent (नाम) · agency (गुण: निवडलेल्या कृतींद्वारे ध्येयांचा पाठपुरावा) · agentic (विशेषण)</text></svg>
+<p class="d" data-en="&lt;b&gt;&quot;Agentic workflow&quot;&lt;/b&gt; = a pipeline where model-driven steps
+  choose the path (vs a fixed script). &lt;b&gt;&quot;Agentic AI&quot;&lt;/b&gt; in a product pitch = ask lesson 01's
   checklist: what's the goal? which tools? what loop? which guardrails? No answers = a chatbot in a
   trench coat 🕵️. And the dial has a price sticker: every notch right multiplies capability AND
-  the need for L05's rules — turn it only as far as your evals prove you've earned.</p>
+  the need for L05's rules — turn it only as far as your evals prove you've earned." style="margin-top:12px"><b>"Agentic workflow"</b> = अशी pipeline जिथे मॉडेल-चालित पायऱ्या मार्ग निवडतात (ठरलेल्या स्क्रिप्टऐवजी). product pitch मधले <b>"Agentic AI"</b> = धडा 01 ची यादी विचारा: ध्येय काय? कोणती साधने? कोणता लूप? कोणते guardrails? उत्तरे नाहीत = ट्रेंच कोट घातलेला chatbot 🕵️. आणि नॉबला किंमतीचे लेबल आहे: उजवीकडची प्रत्येक खूण क्षमता आणि L05 च्या नियमांची गरज दोन्ही गुणाकाराने वाढवते — तुमच्या evals नी कमावले तेवढाच फिरवा.</p>
 </section>
-
 <section class="dsec" id="future" style="--c:#be123c">
-  <h2><span class="ln">🔮</span> The future — an honest outlook</h2>
-  <p class="d">Informed extrapolation, not prophecy — hold it loosely:</p>
-  <svg viewBox="0 0 940 300" role="img"><rect class="box" x="40" y="40" width="280" height="110" rx="12"/><text class="t m" x="180" y="70">📈 near (now-ish)</text><text class="s m" x="180" y="96">longer tasks · computer use ·</text><text class="s m" x="180" y="118">real memory · evals as standard ·</text><text class="s m" x="180" y="140">MCP tool ecosystems 🔌</text><g transform="translate(40,40)"><circle r="11" class="nc"/><text class="nt" dy="4">1</text></g><rect class="box" x="350" y="40" width="280" height="110" rx="12"/><text class="t m" x="490" y="70">🏢 next</text><text class="s m" x="490" y="96">teams of agents with foremen ·</text><text class="s m" x="490" y="118">agent-ops as a job · humans shift</text><text class="s m" x="490" y="140">to reviewing &amp; goal-setting 🚧</text><g transform="translate(350,40)"><circle r="11" class="nc"/><text class="nt" dy="4">2</text></g><rect class="box" x="660" y="40" width="250" height="110" rx="12"/><text class="t m" x="785" y="70">❓ open questions</text><text class="s m" x="785" y="96">reliability at long horizons ·</text><text class="s m" x="785" y="118">injection &amp; security · audit &amp;</text><text class="s m" x="785" y="140">accountability · workflow change</text><g transform="translate(660,40)"><circle r="11" class="nc"/><text class="nt" dy="4">3</text></g><rect class="soft" x="140" y="185" width="660" height="80" rx="12"/><text class="t m" x="470" y="215">🧭 the safe bet: the LOOP stays; the leash lengthens as guardrails + evals mature</text><text class="s m" x="470" y="241">whatever the headlines say, it will still be think→act→observe with better tools and better brakes</text></svg>
-  <p class="d" style="margin-top:12px"><b>📈 Near:</b> longer-horizon tasks (hours, not minutes) as
-  memory and self-verification improve · <b>computer use</b> (agents driving real UIs) maturing from
+<h2 data-en='&lt;span class="ln"&gt;🔮&lt;/span&gt; The future — an honest outlook'><span class="ln">🔮</span> भविष्य — प्रामाणिक अंदाज</h2>
+<p class="d" data-en="Informed extrapolation, not prophecy — hold it loosely:">भविष्यवाणी नव्हे, माहितीवर आधारित अंदाज — सैल धरा:</p>
+<svg role="img" viewbox="0 0 940 300"><rect class="box" height="110" rx="12" width="280" x="40" y="40"></rect><text class="t m" data-en="📈 near (now-ish)" x="180" y="70">📈 जवळचे (आत्ताच)</text><text class="s m" data-en="longer tasks · computer use ·" x="180" y="96">लांब कामे · computer use ·</text><text class="s m" data-en="real memory · evals as standard ·" x="180" y="118">खरे स्मरण · evals मानक ·</text><text class="s m" data-en="MCP tool ecosystems 🔌" x="180" y="140">MCP साधन-परिसंस्था 🔌</text><g transform="translate(40,40)"><circle class="nc" r="11"></circle><text class="nt" dy="4">1</text></g><rect class="box" height="110" rx="12" width="280" x="350" y="40"></rect><text class="t m" data-en="🏢 next" x="490" y="70">🏢 पुढचे</text><text class="s m" data-en="teams of agents with foremen ·" x="490" y="96">foremen असलेल्या एजंट-टीम ·</text><text class="s m" data-en="agent-ops as a job · humans shift" x="490" y="118">agent-ops हे काम · माणसे</text><text class="s m" data-en="to reviewing &amp;amp; goal-setting 🚧" x="490" y="140">review &amp; ध्येय-निश्चितीकडे 🚧</text><g transform="translate(350,40)"><circle class="nc" r="11"></circle><text class="nt" dy="4">2</text></g><rect class="box" height="110" rx="12" width="250" x="660" y="40"></rect><text class="t m" data-en="❓ open questions" x="785" y="70">❓ खुले प्रश्न</text><text class="s m" data-en="reliability at long horizons ·" x="785" y="96">लांब पल्ल्यावर विश्वसनीयता ·</text><text class="s m" data-en="injection &amp;amp; security · audit &amp;amp;" x="785" y="118">injection &amp; सुरक्षा · audit &amp;</text><text class="s m" data-en="accountability · workflow change" x="785" y="140">जबाबदारी · कामाच्या पद्धतीत बदल</text><g transform="translate(660,40)"><circle class="nc" r="11"></circle><text class="nt" dy="4">3</text></g><rect class="soft" height="80" rx="12" width="660" x="140" y="185"></rect><text class="t m" data-en="🧭 the safe bet: the LOOP stays; the leash lengthens as guardrails + evals mature" x="470" y="215">🧭 सुरक्षित पैज: लूप राहतो; guardrails + evals परिपक्व झाल्या की पट्टा लांबतो</text><text class="s m" data-en="whatever the headlines say, it will still be think→act→observe with better tools and better brakes" x="470" y="241">मथळे काहीही म्हणोत, ते अजूनही विचार→कृती→निरीक्षणच असेल, चांगल्या साधनांसह आणि चांगल्या ब्रेकसह</text></svg>
+<p class="d" data-en="&lt;b&gt;📈 Near:&lt;/b&gt; longer-horizon tasks (hours, not minutes) as
+  memory and self-verification improve · &lt;b&gt;computer use&lt;/b&gt; (agents driving real UIs) maturing from
   demo to tool · evals and observability becoming as standard as tests are for code · MCP-style
-  ecosystems making belts a marketplace.</p>
-  <p class="d"><b>🏢 Next:</b> teams of agents with foreman patterns (L08) in real org charts ·
-  "agent ops" as a role (budgets, logs, evals, incident review — the k8s course's instincts, for
-  loops) · humans shifting up the stack: setting goals, reviewing diffs, owning the signatures 🚧.</p>
-  <p class="d"><b>❓ Open questions the field hasn't earned answers to:</b> reliability over very
+  ecosystems making belts a marketplace." style="margin-top:12px"><b>📈 जवळचे:</b> स्मरण आणि स्व-पडताळणी सुधारल्यावर लांब पल्ल्याची कामे (मिनिटे नव्हे, तास) · <b>computer use</b> (खरे UI चालवणारे एजंट) demo पासून साधनापर्यंत परिपक्व होणे · evals आणि observability कोडसाठी tests इतक्याच मानक होणे · MCP-शैलीच्या परिसंस्था पट्ट्यांना बाजारपेठ बनवणे.</p>
+<p class="d" data-en="&lt;b&gt;🏢 Next:&lt;/b&gt; teams of agents with foreman patterns (L08) in real org charts ·
+  &quot;agent ops&quot; as a role (budgets, logs, evals, incident review — the k8s course's instincts, for
+  loops) · humans shifting up the stack: setting goals, reviewing diffs, owning the signatures 🚧."><b>🏢 पुढचे:</b> खऱ्या संस्थात्मक रचनेत foreman पॅटर्न (L08) असलेल्या एजंट-टीम · "agent ops" ही भूमिका (budgets, logs, evals, incident review — k8s कोर्सची अंतःप्रेरणा, लूपसाठी) · माणसे stack मध्ये वर सरकतात: ध्येये ठरवणे, diffs review करणे, सह्यांची मालकी 🚧.</p>
+<p class="d" data-en="&lt;b&gt;❓ Open questions the field hasn't earned answers to:&lt;/b&gt; reliability over very
   long horizons (compounding never sleeps — L06) · security against injection when agents read the
   open web · accountability and audit when loops act at scale · and how work itself reorganizes
-  around drafts-flow-signatures-gate. Anyone selling certainty on these is selling. 😄</p>
-  <p class="d"><b>🧭 The safe bet:</b> the loop stays. Whatever the headlines, it will still be
+  around drafts-flow-signatures-gate. Anyone selling certainty on these is selling. 😄"><b>❓ क्षेत्राला अजून उत्तरे न मिळालेले खुले प्रश्न:</b> खूप लांब पल्ल्यावर विश्वसनीयता (साचणे कधीच झोपत नाही — L06) · एजंट खुले web वाचतात तेव्हा injection विरुद्ध सुरक्षा · लूप मोठ्या प्रमाणावर कृती करतात तेव्हा जबाबदारी आणि audit · आणि मसुदे-वाहतात-सह्या-अडवतात याभोवती कामच कसे पुनर्रचित होते. यावर खात्री विकणारा कोणीही फक्त विकतो आहे. 😄</p>
+<p class="d" data-en="&lt;b&gt;🧭 The safe bet:&lt;/b&gt; the loop stays. Whatever the headlines, it will still be
   think → act → observe — with better tools, longer leashes, and (if we're wise) better brakes.
-  You already know the machine; the future is mostly its knobs.</p>
+  You already know the machine; the future is mostly its knobs."><b>🧭 सुरक्षित पैज:</b> लूप राहतो. मथळे काहीही असोत, ते अजूनही विचार → कृती → निरीक्षण असेल — चांगल्या साधनांसह, लांब पट्ट्यांसह, आणि (शहाणे असलो तर) चांगल्या ब्रेकसह. यंत्र तुम्हाला आधीच माहीत आहे; भविष्य म्हणजे बहुतांशी त्याचे नॉब.</p>
 </section>
-
-<footer>
-  Learn Agents School · <a href="index.html">Course home</a> ·
-  <a href="patterns.html">The 5 patterns</a> ·
-  <a href="lesson-diagrams.html">Lesson diagrams</a> ·
-  <a href="https://github.com/BaluRaut/learn-agents-school">GitHub</a>
-</footer>
+<footer data-en='
+  Learn Agents School · &lt;a href="index.html"&gt;Course home&lt;/a&gt; ·
+  &lt;a href="patterns.html"&gt;The 5 patterns&lt;/a&gt; ·
+  &lt;a href="lesson-diagrams.html"&gt;Lesson diagrams&lt;/a&gt; ·
+  &lt;a href="https://github.com/BaluRaut/learn-agents-school"&gt;GitHub&lt;/a&gt;
+'>Learn Agents School · <a href="index.html">कोर्स मुख्य पान</a> · <a href="patterns.html">5 पॅटर्न</a> · <a href="lesson-diagrams.html">धड्यांच्या आकृत्या</a> · <a href="https://github.com/BaluRaut/learn-agents-school">GitHub</a></footer>
 </div>
-</body>
+
+<script id="i18n-js">
+function schoolSetLang(l){
+  try{localStorage.setItem('school-lang',l)}catch(e){}
+  document.documentElement.setAttribute('lang',l);
+  document.querySelectorAll('[data-en]').forEach(function(el){
+    if(!el.hasAttribute('data-mr')) el.setAttribute('data-mr', el.innerHTML);
+    el.innerHTML = (l==='en') ? el.getAttribute('data-en') : el.getAttribute('data-mr');
+  });
+  document.querySelectorAll('[data-en-ph]').forEach(function(el){
+    if(!el.hasAttribute('data-mr-ph')) el.setAttribute('data-mr-ph', el.getAttribute('placeholder'));
+    el.setAttribute('placeholder', (l==='en') ? el.getAttribute('data-en-ph') : el.getAttribute('data-mr-ph'));
+  });
+  var p=document.getElementById('lang-pick'); if(p) p.value=l;
+}
+(function(){ var l='mr'; try{ l=localStorage.getItem('school-lang')||'mr'; }catch(e){}
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',function(){schoolSetLang(l)}); else schoolSetLang(l); })();
+</script></body>
 </html>
